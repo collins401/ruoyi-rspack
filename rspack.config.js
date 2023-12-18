@@ -55,6 +55,7 @@ const config = {
     new rspack.DefinePlugin({
       'process.env.NODE_ENV': `"${process.env.NODE_ENV}"`,
       'process.env.VUE_APP_BASE_API': "'/prod-api'",
+      'process.env.VUE_APP_PREVIEW': `"${isProduction ? 'false' : 'true'}"`,
       'process.env': JSON.stringify(process.env)
     }),
     new rspack.ProgressPlugin({

@@ -30,9 +30,8 @@ import 'ant-design-vue/es/message/style'
 import message from 'ant-design-vue/es/message'
 
 import BlockCheckbox from './BlockCheckbox'
-import ThemeColor from './ThemeColor'
 import LayoutSetting, { renderLayoutSettingItem } from './LayoutChange'
-import { updateTheme, updateColorWeak } from '../../utils/dynamicTheme'
+import { updateColorWeak } from '../../utils/dynamicTheme'
 import { genStringToTheme } from '../../utils/util'
 import CopyToClipboard from 'vue-copy-to-clipboard'
 
@@ -126,10 +125,6 @@ const getThemeList = (i18nRender) => {
 }
 
 const handleChangeSetting = (key, value, hideMessageLoading) => {
-  if (key === 'primaryColor') {
-    // 更新主色调
-    updateTheme(value)
-  }
   if (key === 'colorWeak') {
     updateColorWeak(value)
   }
@@ -246,17 +241,6 @@ const SettingDrawer = {
               changeSetting('theme', val)
             }} />
           </Body>
-
-          <ThemeColor
-            i18nRender={i18n}
-            title={i18n('app.setting.themecolor')}
-            value={primaryColor}
-            colors={themeList.colorList[theme === 'realDark' ? 'dark' : 'light']}
-            onChange={(color) => {
-              changeSetting('primaryColor', color, null)
-            }}
-          />
-
           <Divider />
 
           <Body title={i18n('app.setting.navigationmode')}>

@@ -12,7 +12,6 @@ import { saveAs } from 'file-saver'
 
 // 是否显示重新登录
 let isReloginShow
-
 // 创建 axios 实例
 const request = axios.create({
   // API 请求的默认前缀

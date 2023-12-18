@@ -38,20 +38,6 @@
           </div>
         </setting-item>
 
-        <setting-item title="主题色" divider>
-          <div style="height: 20px">
-            <a-tooltip class="setting-drawer-theme-color-colorBlock" v-for="(item, index) in colorList" :key="index">
-              <template slot="title">
-                {{ item.key }}
-              </template>
-              <a-tag :color="item.color" @click="handleChange('primaryColor', item.color)">
-                <a-icon type="check" v-if="item.color === primaryColor"></a-icon>
-              </a-tag>
-            </a-tooltip>
-
-          </div>
-        </setting-item>
-
         <setting-item title="导航模式" divider>
           <div class="setting-drawer-index-blockChecbox">
             <a-tooltip>
@@ -164,7 +150,7 @@
 
 <script>
 import SettingItem from './SettingItem'
-import { updateTheme, updateColorWeak, colorList } from './settingConfig'
+import { updateColorWeak, } from './settingConfig'
 import { baseMixin } from '@/store/app-mixin'
 import { tableMixin } from '@/store/table-mixin'
 
@@ -176,7 +162,6 @@ export default {
   data () {
     return {
       visible: false,
-      colorList
     }
   },
   watch: {
@@ -185,10 +170,6 @@ export default {
   },
   methods: {
     handleChange (type, value) {
-      if (type === 'primaryColor') {
-        // 更新主色调
-        updateTheme(value)
-      }
       if (type === 'colorWeak') {
         updateColorWeak(value)
       }
@@ -207,7 +188,6 @@ export default {
       // get current settings from mixin or this.$store.state.app, pay attention to the property name
       const text = `export default {
   navTheme: '${this.navTheme}', // theme for nav menu
-  primaryColor: '${this.primaryColor}', // primary color of ant design
   layout: '${this.layout}', // nav menu position: sidemenu or topmenu
   contentWidth: '${this.contentWidth}', // layout of content: Fluid or Fixed, only works when layout is topmenu
   fixedHeader: ${this.fixedHeader}, // sticky header

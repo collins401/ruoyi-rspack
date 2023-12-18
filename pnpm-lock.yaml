@@ -29,15 +29,6 @@ dependencies:
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
-  lodash.clonedeep:
-    specifier: ^4.5.0
-    version: 4.5.0
-  lodash.get:
-    specifier: ^4.4.2
-    version: 4.4.2
-  lodash.pick:
-    specifier: ^4.4.0
-    version: 4.4.0
   md5:
     specifier: ^2.3.0
     version: 2.3.0
@@ -178,9 +169,6 @@ devDependencies:
   vue-template-compiler:
     specifier: ^2.7.15
     version: 2.7.15
-  webpack-theme-color-replacer:
-    specifier: ^1.3.12
-    version: 1.3.12
 
 packages:
 
@@ -6842,10 +6830,6 @@ packages:
       p-locate: 6.0.0
     dev: true
 
-  /lodash.clonedeep@4.5.0:
-    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
-    dev: false
-
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: true
@@ -6853,10 +6837,6 @@ packages:
   /lodash.defaultsdeep@4.6.1:
     resolution: {integrity: sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==}
     dev: true
-
-  /lodash.get@4.4.2:
-    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
-    dev: false
 
   /lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
@@ -6873,10 +6853,6 @@ packages:
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
-
-  /lodash.pick@4.4.0:
-    resolution: {integrity: sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q==}
-    dev: false
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
@@ -10123,12 +10099,6 @@ packages:
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
-    dev: true
-
-  /webpack-theme-color-replacer@1.3.12:
-    resolution: {integrity: sha512-NZ0CuiSiJXz9LOWhAEQEKyEL7EZpwT0XBqc/bxXgdrIWUa0P5qDqarZTmHAldstjWTM1A0gScnoUnpU2R/De8w==}
-    dependencies:
-      webpack-sources: 3.2.3
     dev: true
 
   /webpack-virtual-modules@0.4.6:

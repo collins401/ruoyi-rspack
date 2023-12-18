@@ -19,7 +19,7 @@ import { printANSI } from '@/utils/screenLog'
 import defaultSettings from '@/config/defaultSettings'
 
 export default function Initializer () {
-  printANSI() // 请自行移除该行.  please remove this line
+  // printANSI() // 请自行移除该行.  please remove this line
 
   store.commit(SIDE_COLLAPSED, storage.get(SIDE_COLLAPSED, false))
   store.commit(TOGGLE_LAYOUT, storage.get(TOGGLE_LAYOUT, defaultSettings.layout))

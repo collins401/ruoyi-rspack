@@ -7,4 +7,4 @@ export { default as SettingDrawer } from './components/SettingDrawer'
 export { default as DocumentTitle } from './components/DocumentTitle'
 export { default as BaseMenu } from './components/RouteMenu'
 // func
-export { updateTheme, updateColorWeak } from './utils/dynamicTheme'
+export { updateColorWeak } from './utils/dynamicTheme'
