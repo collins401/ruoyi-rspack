@@ -11,7 +11,7 @@ const constantRouterComponents = {
   BasicLayout: () => import('@/layouts/BasicLayout'),
   BlankLayout: BlankLayout,
   RouteView: () => import('@/layouts/RouteView'),
-  PageView: PageView,
+  // PageView: PageView,
   UserLayout: UserLayout, // 登陆注册页面的通用布局
 
   // 你需要动态引入的页面组件

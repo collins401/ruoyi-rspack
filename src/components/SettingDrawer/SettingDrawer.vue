@@ -302,7 +302,7 @@ export default {
     border-radius: 4px 0 0 4px;
 
     i {
-      color: rgb(255, 255, 255);
+      color: rgba(255, 255, 255, 1);
       font-size: 20px;
     }
   }

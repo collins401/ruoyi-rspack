@@ -79,7 +79,7 @@ export default {
     text-shadow: none;
     color: #000;
     padding-top: 30px;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
   }
   .highlight-wrap:before {
     content: " ";
