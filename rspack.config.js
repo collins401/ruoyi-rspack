@@ -10,10 +10,6 @@ console.log('isProduction: ', process.env.NODE_ENV)
 const config = {
 	mode: isProduction ? 'production' : 'development',
 	context: __dirname,
-	externals: {
-    'AMap': 'AMap',
-    'AMapUI': 'AMapUI'
-  },
 	entry: {
 		main: './src/main.js'
 	},
