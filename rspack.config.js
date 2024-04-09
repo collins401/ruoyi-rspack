@@ -8,7 +8,7 @@ console.log('isProduction: ', process.env.NODE_ENV)
 
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
-	mode: isProduction ? 'production' : 'development',
+	mode: process.env.NODE_ENV,
 	context: __dirname,
 	entry: {
 		main: './src/main.js'
@@ -125,7 +125,9 @@ const config = {
 							lessOptions: {
 								modifyVars: {
 									'primary-color': '#42b883',
-									'link-color': '#42b883'
+									'link-color': '#42b883',
+                  'border-radius-base': '6px',
+                  '@border-radius-sm': '4px'
 								},
 								javascriptEnabled: true
 							}

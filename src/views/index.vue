@@ -96,7 +96,7 @@
   </page-header-wrapper>
 </template>
 
-<script>
+<script lang="jsx">
 import { timeFix } from '@/utils/util'
 import { mapGetters } from 'vuex'
 import { PageHeaderWrapper } from '@/components/ProLayout'
